@@ -1,0 +1,6 @@
+{
+  "name": "BEA TEK EVENTS",
+  "description": "Site officiel de BEA TEK EVENTS - Événements, soirées, festivals et expériences musicales immersives sous l'ambiance néon, laser et futuriste.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
