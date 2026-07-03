@@ -241,22 +241,16 @@ export default function CalendarSection({ events, settings, onScrollToSection }:
                     key={event.id}
                     className="group relative bg-zinc-950/80 border border-zinc-900 rounded-3xl overflow-hidden hover:border-pink-500/30 transition-all duration-300 hover:shadow-2xl hover:shadow-pink-500/5 flex flex-col h-full"
                   >
-                    {/* Event Image Cover */}
-                    <div className="relative h-48 overflow-hidden bg-zinc-900">
-                      <img 
-                        src={event.image} 
-                        alt={event.title} 
-                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                        referrerPolicy="no-referrer"
-                      />
+                    {/* Event Header Accent */}
+                    <div className="relative h-16 bg-gradient-to-r from-zinc-950 to-zinc-900 border-b border-zinc-900/40 flex items-center px-5">
                       {/* Category Badge overlay */}
-                      <span className="absolute top-4 left-4 px-2.5 py-1 rounded-lg bg-black/70 border border-zinc-800 text-[10px] uppercase tracking-wider font-extrabold text-pink-500">
+                      <span className="px-2.5 py-1 rounded-lg bg-zinc-900 border border-zinc-800 text-[10px] uppercase tracking-wider font-extrabold text-pink-500">
                         {event.type}
                       </span>
                       
                       {/* Sync marker */}
                       {settings.googleCalendarId && (
-                        <span className="absolute top-4 right-4 p-1.5 rounded-lg bg-blue-500 text-white font-mono text-[9px] font-bold flex items-center gap-1 shadow-lg">
+                        <span className="absolute top-4 right-5 p-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 font-mono text-[9px] font-bold flex items-center gap-1 shadow-lg">
                           <RefreshCw size={10} className="animate-spin" style={{ animationDuration: '4s' }} />
                           G-CAL
                         </span>

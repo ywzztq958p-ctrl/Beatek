@@ -479,14 +479,9 @@ export default function AdminPanel({
             <div className="grid gap-4">
               {events.map((event) => (
                 <div key={event.id} className="bg-zinc-950 border border-zinc-900 rounded-2xl p-5 flex flex-col md:flex-row items-center gap-6">
-                  {/* Event Thumbnail */}
-                  <div className="w-full md:w-32 h-20 rounded-xl overflow-hidden bg-zinc-900 flex-shrink-0">
-                    <img
-                      src={event.image}
-                      alt={event.title}
-                      className="w-full h-full object-cover"
-                      referrerPolicy="no-referrer"
-                    />
+                  {/* Event Category Indicator */}
+                  <div className="w-full md:w-32 h-20 rounded-xl bg-zinc-900 border border-zinc-800 flex flex-col items-center justify-center flex-shrink-0">
+                    <span className="text-[10px] font-mono font-bold text-pink-500 uppercase tracking-widest">{event.type}</span>
                   </div>
 
                   {/* Event Summary */}

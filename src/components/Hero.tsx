@@ -12,14 +12,8 @@ export default function Hero({ onScrollToSection }: HeroProps) {
       id="home" 
       className="relative min-h-screen bg-black flex items-center justify-center overflow-hidden pt-20"
     >
-      {/* Background Image with Dark & Neon Gradient Overlays */}
+      {/* Background with Dark & Neon Gradient Overlays */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src="/src/assets/images/hero_stage_1783097192928.jpg" 
-          alt="BEA TEK Stage" 
-          className="w-full h-full object-cover scale-105 filter brightness-50 contrast-110"
-          referrerPolicy="no-referrer"
-        />
         {/* Gradients */}
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/80" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-transparent to-black/90" />
